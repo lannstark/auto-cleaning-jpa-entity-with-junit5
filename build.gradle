@@ -45,6 +45,9 @@ allprojects {
         mavenCentral()
     }
 
+    bootJar.enabled = false
+    jar.enabled = true
+    
     dependencies {
         // Kotlin Reflection을 위한 의존성
         implementation("org.jetbrains.kotlin:kotlin-reflect")
