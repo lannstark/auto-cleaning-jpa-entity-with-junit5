@@ -39,9 +39,6 @@ allOpen {
 }
 apply plugin: "org.springframework.boot"
 
-bootJar.enabled = false
-jar.enabled = true
-
 dependencies {
     // Kotlin Reflection Dependency
     implementation("org.jetbrains.kotlin:kotlin-reflect")
