@@ -21,18 +21,15 @@ plugins {
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 }
 
-allprojects {
-    repositories {
-        mavenCentral()
-        maven { url 'https://jitpack.io' }
-    }
+repositories {
+    mavenCentral()
 }
 
 sourceCompatibility = 1.8 // java 8
 targetCompatibility = 1.8
 
 group 'com.github.lannstark'
-version '0.1.8'
+version '0.1.9'
 
 apply plugin: 'java'
 apply plugin: 'maven'
@@ -46,9 +43,6 @@ allOpen {
     annotation "javax.persistence.MappedSuperclass"
 }
 apply plugin: "org.springframework.boot"
-
-bootJar.enabled = false
-jar.enabled = true
 
 dependencies {
     // Kotlin Reflection Dependency
