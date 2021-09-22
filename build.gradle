@@ -25,14 +25,16 @@ repositories {
     mavenCentral()
 }
 
-group 'com.lannstark'
-version '0.1.4'
+group 'com.github.lannstark'
+version '0.1.5'
 
 
 apply plugin: 'kotlin'
 apply plugin: "kotlin-jpa"
 apply plugin: "kotlin-allopen"
 apply plugin: 'kotlin-spring'
+apply plugin: 'maven'
+
 allOpen {
     annotation "javax.persistence.Entity"
     annotation "javax.persistence.MappedSuperclass"
