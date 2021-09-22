@@ -26,7 +26,7 @@ repositories {
 }
 
 group 'com.lannstark'
-version '0.1.2'
+version '0.1.4'
 
 
 apply plugin: 'kotlin'
