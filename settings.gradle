@@ -1,0 +1,4 @@
+rootProject.name = 'auto-cleaning-jpa-entity-with-junit5'
+
+include("internal-test")
+include("main")
