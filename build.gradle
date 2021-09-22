@@ -28,10 +28,11 @@ allprojects {
     }
 }
 
+sourceCompatibility = 1.8 // java 8
+targetCompatibility = 1.8
 
 group 'com.github.lannstark'
-version '0.1.6'
-
+version '0.1.7'
 
 apply plugin: 'kotlin'
 apply plugin: "kotlin-jpa"
@@ -44,6 +45,10 @@ allOpen {
     annotation "javax.persistence.MappedSuperclass"
 }
 apply plugin: "org.springframework.boot"
+
+jar {
+    enabled = false
+}
 
 dependencies {
     // Kotlin Reflection Dependency
